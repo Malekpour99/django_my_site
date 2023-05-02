@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+This Post Title
+{% endblock title %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'blog/post-detail.css' %}" />
+{% endblock css_files %}
+
+{% block content %}
+<section id="summary">
+    <h2>Post Title</h2>
+    <article>
+        <img src="{% static "blog/images/mountains.jpg" %}" alt="Post Title" />
+        <address>By Achilles</address>
+        <div>
+            Last updated on <time>July 10th</time>
+        </div>
+    </article>
+</section>
+
+<main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nostrum, iste fugiat quasi ipsa quod hic aut
+        explicabo? Quis possimus tempora distinctio at dignissimos quas autem error impedit, eos tenetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nostrum, iste fugiat quasi ipsa quod hic aut
+        explicabo? Quis possimus tempora distinctio at dignissimos quas autem error impedit, eos tenetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nostrum, iste fugiat quasi ipsa quod hic aut
+        explicabo? Quis possimus tempora distinctio at dignissimos quas autem error impedit, eos tenetur.</p>
+</main>
+{% endblock content %}
