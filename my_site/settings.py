@@ -128,3 +128,9 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# below address is considered for the uploaded files
+MEDIA_ROOT = BASE_DIR / "uploads"
+
+# Django will let below path to be accessed for showing uploaded files to the clients
+MEDIA_URL = "/files/"
