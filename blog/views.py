@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Post
 from django.views.generic import ListView, DetailView
+from .models import Post
+from .forms import CommentForm
 
 
 class StartingPageView(ListView):
@@ -44,6 +45,7 @@ class PostDetailView(DetailView):
         context = super().get_context_data(**kwargs)
         # self.object points to the loaded post
         context["post_tags"] = self.object.tags.all()
+        context["comment_form"] = CommentForm()
         return context
 
 
