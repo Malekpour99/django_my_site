@@ -8,7 +8,7 @@ body {
 }
 
 #summary {
-    margin: 8rem auto 3rem auto;
+    margin: 8rem auto 0 auto;
     padding: 2rem;
     width: 90%;
     max-width: 90rem;
